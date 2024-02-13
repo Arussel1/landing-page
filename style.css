@@ -1,6 +1,6 @@
 
 body{
-    font-style:"Nunito",san-serif;
+    font-family:'Nunito',sans-serif;
     /* flex column display for vertical alignment */
     display: flex;
     flex-direction: column;
@@ -70,8 +70,11 @@ body{
     justify-content: center;
 }
 .illustration{
-    width:100px;
-    height:100px;
-    border:10px;
-    border-color:var(--sign-up-color);
+    max-width: 150px;
+    text-align: center;
+    margin-right:60px;
+}
+.people{
+    max-width:150px;
+    border-radius: 6px;
 }
