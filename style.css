@@ -10,9 +10,13 @@ body{
     --text-size:18px;
     --sign-up-color:#3882F6;
     --extra-bold:800;
+    --header-background-color:#1F2937;
+
+/* Website navigation and title */
+
 }
 .header{
-    background-color:#1F2937;
+    background-color:var(--header-background-color);
 
 }
 .nav,.header-body{
@@ -35,6 +39,8 @@ body{
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto 0 0;
+    padding-right:20px
+    
 }
 .hero-main-text{
     font-size:48px;
@@ -46,7 +52,7 @@ body{
     font-size:var(--text-size);
     color:var(--text-color);
 }
-.hero-button{
+button{
     background-color: var(--sign-up-color);
     color:var(--heading-color);
     font-weight: 700;
@@ -56,13 +62,14 @@ body{
     max-width:150px;
     border-radius: 8px;
 }
+/* Review */
 .header-image{
     height:249px;
 }
 .header-info {
     font-size:36px;
     font-weight: var(--extra-bold);
-    color:#1F2937;
+    color:var(--header-background-color);
     text-align: center;
 }
 .illustrations{
@@ -77,4 +84,30 @@ body{
 .people{
     max-width:150px;
     border-radius: 6px;
+}
+/* Quote of the day */
+.quote-space{
+    background-color: var(--text-color);
+    padding:60px 6vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote{
+    max-width:800px;
+}
+.quote-text{
+    font-style: italic;
+    font-weight: 100;
+    font-size:36px;
+    color:var(--header-background-color);
+    margin:0 auto;
+}
+/* People saying the quote */
+.signature{
+    text-align: right;
+    font-weight: var(--extra-bold);
+    font-size: 18px;
+    margin-left:auto;
 }
