@@ -11,6 +11,7 @@ body{
     --sign-up-color:#3882F6;
     --extra-bold:800;
     --header-background-color:#1F2937;
+    --rounded-corner:8px;
 
 /* Website navigation and title */
 
@@ -59,8 +60,8 @@ button{
     font-size:var(--text-size);
     border:0;
     height:40px;
-    max-width:150px;
-    border-radius: 8px;
+    width:150px;
+    border-radius: var(--rounded-corner);
 }
 /* Review */
 .header-image{
@@ -83,7 +84,7 @@ button{
 }
 .people{
     max-width:150px;
-    border-radius: 6px;
+    border-radius: var(--rounded-corner);
 }
 /* Quote of the day */
 .quote-space{
@@ -108,6 +109,27 @@ button{
 .signature{
     text-align: right;
     font-weight: var(--extra-bold);
-    font-size: 18px;
+    font-size: var(--text-size);
+    margin-left:auto;
+}
+.sign-up{
+    padding:32px 100px;
+}
+.action-box{
+    background-color: var(--sign-up-color);
+    display: flex;
+    color:(--heading-color);
+    align-items: center;
+    padding: 20px 60px;
+    border-radius: var(--rounded-corner);
+}
+.action-text{
+    color: var(--heading-color);
+}
+h4{
+    font-size: var(--text-size);
+}
+.sign-up-button{
+    border:2px solid var(--heading-color);
     margin-left:auto;
 }
