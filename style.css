@@ -1,4 +1,11 @@
-
+/* Reset CSS */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Remove link underline and change color when hover */
 a{
     text-decoration: none;
     color:var(--text-color);
@@ -22,7 +29,6 @@ body{
     --rounded-corner:8px;
 
 /* Website navigation and title */
-
 }
 .header{
     background-color:var(--header-background-color);
