@@ -129,6 +129,7 @@ button:hover{
 }
 .action-text{
     color: var(--heading-color);
+    padding-right:20px;
 }
 h4{
     font-size: var(--text-size);
@@ -136,4 +137,11 @@ h4{
 .sign-up-button{
     border:2px solid var(--heading-color);
     margin-left:auto;
+}
+/* Footer */
+.footer{
+    background-color: var(--header-background-color);
+    text-align: center;
+    color:var(--text-color);
+    padding:50px 0;
 }
