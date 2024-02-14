@@ -1,155 +1,170 @@
+/* Variables */
+:root {
+    --heading-color: #F9FAF8;
+    --text-color: #E5E7EB;
+    --text-size: 18px;
+    --sign-up-color: #3882F6;
+    --extra-bold: 800;
+    --header-background-color: #1F2937;
+    --rounded-corner: 8px;
+}
 
-a{
+/* Base Styles */
+a {
     text-decoration: none;
-    color:var(--text-color);
-}
-a:hover{
-    color:darkmagenta;
+    color: var(--text-color);
 }
 
-body{
-    font-family:'Nunito',sans-serif;
-    /* flex column display for vertical alignment */
+a:hover {
+    color: darkmagenta;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
-    /*variable for heading color, text color, size, weight*/
-    --heading-color:#F9FAF8;
-    --text-color:#E5E7EB;
-    --text-size:18px;
-    --sign-up-color:#3882F6;
-    --extra-bold:800;
-    --header-background-color:#1F2937;
-    --rounded-corner:8px;
+}
 
 /* Website navigation and title */
-
+.header {
+    background-color: var(--header-background-color);
 }
-.header{
-    background-color:var(--header-background-color);
 
-}
-.nav,.header-body{
+.nav,
+.header-body {
     display: flex;
     align-items: center;
-    padding:8px 160px 160px 160px;
+    padding: 8px 160px 160px 160px;
 }
-.logo{
+
+.logo {
     font-size: 24px;
-    color:var(--heading-color);
+    color: var(--heading-color);
     margin: 0 auto 0 0;
 }
-.action,.review,.quote-of-the-day{
-    font-size:var(--text-size);
-    color:var(--text-color);
-    margin:16px;
+
+.action,
+.review,
+.quote-of-the-day {
+    font-size: var(--text-size);
+    color: var(--text-color);
+    margin: 16px;
 }
-.hero-text{
-    display:flex;
+
+/* Hero section */
+.hero-text {
+    display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto 0 0;
-    padding-right:20px
-    
+    padding-right: 20px;
 }
-.hero-main-text{
-    font-size:48px;
+
+.hero-main-text {
+    font-size: 48px;
     font-weight: var(--extra-bold);
-    color:var(--heading-color);
-    margin:0;
+    color: var(--heading-color);
+    margin: 0;
 }
-.hero-secondary-text{
-    font-size:var(--text-size);
-    color:var(--text-color);
+
+.hero-secondary-text {
+    font-size: var(--text-size);
+    color: var(--text-color);
 }
-button{
+
+button {
     background-color: var(--sign-up-color);
-    color:var(--heading-color);
+    color: var(--heading-color);
     font-weight: 700;
-    font-size:var(--text-size);
-    border:0;
-    height:40px;
-    width:150px;
+    font-size: var(--text-size);
+    border: 0;
+    height: 40px;
+    width: 150px;
     border-radius: var(--rounded-corner);
 }
-button:hover{
+
+button:hover {
     background-color: darkblue;
 }
-/* Review */
-.header-image{
-    height:249px;
+
+/* Review section */
+.header-image {
+    height: 249px;
 }
+
 .header-info {
-    font-size:36px;
+    font-size: 36px;
     font-weight: var(--extra-bold);
-    color:var(--header-background-color);
+    color: var(--header-background-color);
     text-align: center;
 }
-.illustrations{
-    display:flex;
+
+.illustrations {
+    display: flex;
     justify-content: center;
 }
-.illustration{
+
+.illustration {
     max-width: 150px;
     text-align: center;
-    margin-right:60px;
+    margin-right: 60px;
 }
-.people{
-    max-width:150px;
+
+.people {
+    max-width: 150px;
     border-radius: var(--rounded-corner);
 }
-/* Quote of the day */
-.quote-space{
+
+/* Quote of the day section */
+.quote-space {
     background-color: var(--text-color);
-    padding:60px 6vw;
-    display:flex;
+    padding: 60px 6vw;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.quote{
-    max-width:800px;
+
+.quote {
+    max-width: 800px;
 }
-.quote-text{
+
+.quote-text {
     font-style: italic;
     font-weight: 100;
-    font-size:36px;
-    color:var(--header-background-color);
-    margin:0 auto;
+    font-size: 36px;
+    color: var(--header-background-color);
+    margin: 0 auto;
 }
-/* Quote box */
-.signature{
-    text-align: right;
-    font-weight: var(--extra-bold);
-    font-size: var(--text-size);
-    margin-left:auto;
-}
-.sign-up{
-    padding:32px 100px;
-}
+
 /* Action box */
-.action-box{
+.action-box {
     background-color: var(--sign-up-color);
     display: flex;
-    color:(--heading-color);
+    color: (--heading-color);
     align-items: center;
     padding: 20px 60px;
     border-radius: var(--rounded-corner);
 }
-.action-text{
+
+.action-text {
     color: var(--heading-color);
-    padding-right:20px;
+    padding-right: 20px;
 }
-h4{
+
+h4 {
     font-size: var(--text-size);
 }
-.sign-up-button{
-    border:2px solid var(--heading-color);
-    margin-left:auto;
+
+.sign-up-button {
+    border: 2px solid var(--heading-color);
+    margin-left: auto;
 }
+
 /* Footer */
-.footer{
+.footer {
     background-color: var(--header-background-color);
     text-align: center;
-    color:var(--text-color);
-    padding:50px 0;
+    color: var(--text-color);
+    padding: 50px 0;
 }
