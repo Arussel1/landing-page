@@ -1,4 +1,12 @@
 
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+a:hover{
+    color:darkmagenta;
+}
+
 body{
     font-family:'Nunito',sans-serif;
     /* flex column display for vertical alignment */
@@ -30,7 +38,7 @@ body{
     color:var(--heading-color);
     margin: 0 auto 0 0;
 }
-.about,.link-two,.link-three{
+.action,.review,.quote-of-the-day{
     font-size:var(--text-size);
     color:var(--text-color);
     margin:16px;
