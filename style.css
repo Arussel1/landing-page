@@ -14,11 +14,8 @@ a:hover{
     color:darkmagenta;
 }
 
-body{
+:root{
     font-family:'Nunito',sans-serif;
-    /* flex column display for vertical alignment */
-    display: flex;
-    flex-direction: column;
     /*variable for heading color, text color, size, weight*/
     --heading-color:#F9FAF8;
     --text-color:#E5E7EB;
@@ -50,11 +47,9 @@ body{
     margin:16px;
 }
 .hero-text{
-    display:flex;
-    flex-direction: column;
     max-width: 400px;
     margin: 0 auto 0 0;
-    padding-right:20px
+    padding-right:20px;
     
 }
 .hero-main-text{
@@ -107,8 +102,6 @@ button:hover{
 .quote-space{
     background-color: var(--text-color);
     padding:60px 6vw;
-    display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
